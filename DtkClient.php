@@ -86,11 +86,33 @@ class DtkClient
     }
 
     /**
+     * 设置请求参数
+     * @param $params
+     * @return $this
+     */
+    public function setParams($params)
+    {
+        foreach ($this->getParamsField() as $field) {
+            if (isset($params[$field])) {
+                $this->$field = $params[$field];
+                $this->requestParams[$field] = $params[$field];
+            }
+        }
+        return $this;
+    }
+
+    /**
      * 接口调用
      * @return bool|string
      */
     public function request()
     {
+        //参数校验
+        list($msg, $status) = $this->check();
+        if (!$status) {
+            return json_encode(array('code'=>10001,'msg'=>$msg));
+        }
+
         $host = self::HOST . $this->getMethod();
 
         if ($host == '' || $this->appKey == '' || $this->appSecret == '' || $this->version == '') {
