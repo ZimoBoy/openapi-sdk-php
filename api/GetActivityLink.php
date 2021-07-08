@@ -13,6 +13,7 @@ class GetActivityLink extends DtkClient
     protected $pid;
     protected $relationId;
     protected $unionId;
+
     protected $methodType = 'GET';
     protected $requestParams = [];
 
