@@ -6,18 +6,26 @@
 #### 软件架构
 软件架构说明
 
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  将SDK克隆下来，直接引入到项目中
+
+> 使用实例
+
+```
+    include "DtkSdk.php";
+
+    //线报api
+    $client = new GetTipList();
+
+    $client->setAppKey('5ff42cda0fd35');
+    $client->setAppSecret('28318c5c2ea7b5c57fa7fab0a990db7f');
+    $client->setVersion('v3.0.0');
+
+    $res = $client->setParams([])->request();
+    var_dump($res);
+
+```
 
 #### 参与贡献
 
