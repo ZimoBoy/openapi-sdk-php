@@ -3,15 +3,9 @@
 #### 介绍
 大淘客开放平台SDK PHP版
 
-#### 软件架构
-软件架构说明
-
-#### 使用说明
-
-1.  将SDK克隆下来，直接引入到项目中
-
-> 使用实例
-
+#### 安装教程
+```git clone https://gitee.com/dtk-developer/openapi-sdk-php.git```
+#### 使用实例
 ```
     include "DtkSdk.php";
 
