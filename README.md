@@ -4,7 +4,7 @@
 大淘客开放平台SDK PHP版
 
 #### 安装教程
-```git clone https://gitee.com/dtk-developer/openapi-sdk-php.git```
+```composer require dtk/openapi-sdk-php```
 #### 使用实例
 ```
     include "DtkSdk.php";
