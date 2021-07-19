@@ -3,21 +3,23 @@
 #### 介绍
 大淘客开放平台SDK PHP版
 
-#### 软件架构
-软件架构说明
-
-
 #### 安装教程
+```composer require dtk/openapi-sdk-php```
+#### 使用实例
+```
+    include 'vendor/autoload.php';
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+    //线报api
+    $client = new GetTipList();
 
-#### 使用说明
+    $client->setAppKey('5ff42cda0fd35');
+    $client->setAppSecret('28318c5c2ea7b5c57fa7fab0a990db7f');
+    $client->setVersion('v3.0.0');
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+    $res = $client->setParams([])->request();
+    var_dump($res);
+
+```
 
 #### 参与贡献
 
