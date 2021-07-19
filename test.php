@@ -1,5 +1,5 @@
 <?php
-    include "DtkSdk.php";
+    include 'vendor/autoload.php';
 
     //线报api
     $client = new GetTipList();
