@@ -1,5 +1,5 @@
 {
-    "name": "dtk/openapi-sdk-php",
+    "name": "dtk-developer/openapi-sdk-php",
     "description": "dataoke openapi sdk for php",
     "license": "MIT",
     "type": "library",
