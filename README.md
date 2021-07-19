@@ -7,7 +7,7 @@
 ```composer require dtk/openapi-sdk-php```
 #### 使用实例
 ```
-    include "DtkSdk.php";
+    include 'vendor/autoload.php';
 
     //线报api
     $client = new GetTipList();
